@@ -1,22 +1,30 @@
-import {StrictMode} from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import AppRouter from './routes';
-import {RecoilRoot} from "recoil"
+import { StrictMode } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { RecoilRoot } from "recoil";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "styled-components";
+
+import AppRouter from "./routes";
+import { ResetCss } from "./theme/globalStyles";
+import { dark } from "./theme";
+import { Header } from "./components";
+
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
   <StrictMode>
     <RecoilRoot>
-    <BrowserRouter>
-    <AppRouter />
-    </BrowserRouter>
+      <ThemeProvider theme={dark()}>
+        <ResetCss />
+        <BrowserRouter>
+          <Header />
+          <AppRouter />
+        </BrowserRouter>
+      </ThemeProvider>
     </RecoilRoot>
   </StrictMode>
 );
-
 reportWebVitals();

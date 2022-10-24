@@ -1,22 +1,22 @@
 export type TPokemonType =
-  | "bug"
-  | "dark"
-  | "dragon"
-  | "eletric"
-  | "fairy"
-  | "fighting"
-  | "fire"
-  | "flying"
-  | "ghost"
-  | "grass"
-  | "ground"
-  | "ice"
-  | "normal"
-  | "poison"
-  | "psychic"
-  | "rock"
-  | "steel"
-  | "water";
+  | 'bug'
+  | 'dark'
+  | 'dragon'
+  | 'eletric'
+  | 'fairy'
+  | 'fighting'
+  | 'fire'
+  | 'flying'
+  | 'ghost'
+  | 'grass'
+  | 'ground'
+  | 'ice'
+  | 'normal'
+  | 'poison'
+  | 'psychic'
+  | 'rock'
+  | 'steel'
+  | 'water';
 
 export interface IPokemonFetch {
   name: string;
@@ -136,13 +136,13 @@ export interface IPokemon {
         front_shiny?: string;
         front_shiny_female?: string;
       };
-      "official-artwork"?: {
+      'official-artwork'?: {
         front_default?: string;
       };
     };
     versions?: {
-      "generation-i"?: {
-        "red-blue"?: {
+      'generation-i'?: {
+        'red-blue'?: {
           back_default?: string;
           back_gray?: string;
           back_transparent?: string;
@@ -159,7 +159,7 @@ export interface IPokemon {
           front_transparent?: string;
         };
       };
-      "generation-ii"?: {
+      'generation-ii'?: {
         crystal?: {
           back_default?: string;
           back_shiny?: string;
@@ -185,26 +185,26 @@ export interface IPokemon {
           front_transparent?: string;
         };
       };
-      "generation-iii"?: {
+      'generation-iii'?: {
         emerald?: {
           front_default?: string;
           front_shiny?: string;
         };
-        "firered-leafgreen"?: {
+        'firered-leafgreen'?: {
           back_default?: string;
           back_shiny?: string;
           front_default?: string;
           front_shiny?: string;
         };
-        "ruby-sapphire"?: {
+        'ruby-sapphire'?: {
           back_default?: string;
           back_shiny?: string;
           front_default?: string;
           front_shiny?: string;
         };
       };
-      "generation-iv"?: {
-        "diamond-pearl"?: {
+      'generation-iv'?: {
+        'diamond-pearl'?: {
           back_default?: string;
           back_female?: string;
           back_shiny?: string;
@@ -214,7 +214,7 @@ export interface IPokemon {
           front_shiny?: string;
           front_shiny_female?: string;
         };
-        "heartgold-soulsilver"?: {
+        'heartgold-soulsilver'?: {
           back_default?: string;
           back_female?: string;
           back_shiny?: string;
@@ -235,8 +235,8 @@ export interface IPokemon {
           front_shiny_female?: string;
         };
       };
-      "generation-v"?: {
-        "black-white"?: {
+      'generation-v'?: {
+        'black-white'?: {
           animated?: {
             back_default?: string;
             back_female?: string;
@@ -257,33 +257,33 @@ export interface IPokemon {
           front_shiny_female?: string;
         };
       };
-      "generation-vi"?: {
-        "omegaruby-alphasapphire"?: {
+      'generation-vi'?: {
+        'omegaruby-alphasapphire'?: {
           front_default?: string;
           front_female?: string;
           front_shiny?: string;
           front_shiny_female?: string;
         };
-        "x-y"?: {
+        'x-y'?: {
           front_default?: string;
           front_female?: string;
           front_shiny?: string;
           front_shiny_female?: string;
         };
       };
-      "generation-vii"?: {
+      'generation-vii'?: {
         icons?: {
           front_default?: string;
           front_female?: string;
         };
-        "ultra-sun-ultra-moon"?: {
+        'ultra-sun-ultra-moon'?: {
           front_default?: string;
           front_female?: string;
           front_shiny?: string;
           front_shiny_female?: string;
         };
       };
-      "generation-viii"?: {
+      'generation-viii'?: {
         icons?: {
           front_default?: string;
           front_female?: string;
